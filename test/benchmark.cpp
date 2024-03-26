@@ -89,7 +89,7 @@ void buffered_write_with_fsync(FILE *fp, const char *bytes, size_t size) {
 
 void buffered_write_without_flush(FILE *fp, const char *bytes, size_t size) {
     if (!fwrite(bytes, size, 1, fp)) {
-        cout << "wirte file failed" << endl;
+        cout << "write file failed" << endl;
         exit(-1);
     }
 }
